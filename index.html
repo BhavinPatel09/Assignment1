@@ -1,0 +1,20 @@
+<html ng-app="lunchAssignmentApp">
+<head>
+    <title>Assignment 1</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <div ng-controller="lunchAssignmentController">
+      <h1>Lunch App </h1>
+      <div>
+          <form ng-submit="checkFoodItems();">
+              <p>Enter food items list: <input type="text" ng-model="fooditems"></input></p>
+              <input type="submit" value="Check if too much!"></input>
+              <p>Message:{{message}}</p>
+          </form>
+      </div>
+    </div>
+</body>
+</html>
